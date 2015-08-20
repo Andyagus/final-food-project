@@ -16,17 +16,28 @@
 //= require_tree .
 
 $( document ).ready(function() {
-      $('.base').hide();
+     
 
+      $('.base').hide();
    $('.start-order .menu-items').click(function(){
       $('.start-order').addClass('animated bounceOutLeft');
-      $('start-order').removeClass()
-
-      $('.base').addClass("#animated-content");
-      $('.base').show();
-
-
+      $('.base').show(0)
+      $('.base').addClass('animated bounceInRight');
 
    });
+   $('.protein').hide();
+   
+   $('.base .menu-items').click(function(){
+      $('.base').addClass('animated bounceOutLeft');
+      $('.protein').show(0);
+      $('.protein').addClass('animated bounceInRight');
+   });
 
+   $('.toppings').hide();
+
+   $('.protein .menu-items').click(function(){
+      $('.protein').addClass('animated bounceOutLeft');
+      $('.toppings').show(0);
+      $('.toppings').addClass('animated bounceInRight');
+   });
 });

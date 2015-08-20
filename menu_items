@@ -1,0 +1,86 @@
+Sandwich
+   Base: Bread
+      White Bread
+      Whole Wheat Bread
+      Rye Bread
+   Protein: 
+      Chicken
+      Beef
+      Smoked-Salmon
+      Eggs 
+      Sausage
+   Toppings: 
+      Lettuce
+      Tomato
+      Avocado
+      American Cheese
+      Chedder Cheese
+      Onions
+
+Salads
+   Base:
+      Romaine Lettuce
+      Baby Spinach
+      Arugula
+   Protein: 
+      Roasted Chieken
+      Steak
+      Tofu
+      Hard Boiled Eggs
+         Cheese:
+         American 
+         Mozzorella
+         Pepper Jack 
+         Feta Cheese
+
+   Dressings: 
+      Blue Cheese
+      Ranch
+      Belsamic Vinegerette 
+      Extra Spicy Thai 
+      Olive Oil
+
+Hamburger
+   Base: 
+      Brioche Bun
+      Whole wheat bun
+      No Bun
+
+   Protein: 
+      Beef
+      Grilled Chicken 
+      Veggie
+
+   Toppings:
+      Mayo
+      Ketchup 
+      Mustard
+
+Pizza
+   Base: 
+      Small Pie 
+      Medium Pie
+      Large Pie 
+
+   Toppings: 
+      Cheese 
+      Peporonni
+      Mushrooms
+      Olives Peppers
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
