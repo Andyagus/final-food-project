@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :options
+  resources :product_components
+  resources :products
+  resources :order_items
+  resources :orders
   resources :users
   root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
