@@ -11,26 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150820221923) do
+ActiveRecord::Schema.define(version: 20150821013844) do
 
   create_table "options", force: :cascade do |t|
     t.string   "name"
-    t.string   "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.decimal  "price"
+    t.integer  "product_component_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "order_items", force: :cascade do |t|
-    t.integer  "products_id"
-    t.integer  "product_components_id"
-    t.integer  "options_id"
-    t.integer  "sub_total"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.integer  "order_id"
+    t.integer  "product_id"
+    t.integer  "product_component_id"
+    t.integer  "option_id"
+    t.decimal  "sub_total"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer  "users_id"
+    t.integer  "user_id"
     t.decimal  "sub_total"
     t.decimal  "grand_total"
     t.datetime "created_at",  null: false
@@ -44,10 +46,10 @@ ActiveRecord::Schema.define(version: 20150820221923) do
   end
 
   create_table "product_options", force: :cascade do |t|
-    t.integer  "products_id"
-    t.integer  "options_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "product_id"
+    t.integer  "option_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
