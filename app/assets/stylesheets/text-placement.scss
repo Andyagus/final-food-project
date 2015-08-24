@@ -1,0 +1,18 @@
+
+#inner-shield-1 {
+   margin: 0 ;
+}
+   
+h1  {
+   text-align: center;
+}
+
+p {
+   @include span-columns(12 of 12);
+   font-family: roboto;
+   padding-left: 400px;
+   padding-right: 400px;
+   text-align: center;
+}
+
+

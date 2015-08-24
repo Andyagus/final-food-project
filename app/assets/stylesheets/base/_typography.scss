@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
@@ -7,7 +9,10 @@ body {
   line-height: $base-line-height;
 }
 
-h1,
+h1{
+font-family: 'Roboto', serif;
+font-size: 64px;
+}
 h2,
 h3,
 h4,

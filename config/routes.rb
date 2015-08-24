@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :order_items
   resources :orders
   resources :users
-  root 'users#index'
+  root 'orders#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

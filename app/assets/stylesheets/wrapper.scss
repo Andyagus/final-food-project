@@ -1,80 +1,52 @@
-#wrapper {
-   @include outer-container(100%);
-    background-color: lightblue; 
+
+
+body {
+   margin: 0;
+  background-image: url("../woods.jpg");
+
 }
 
-#animated-content {
-   margin-top: 100px;
-   width: 100%;
-   height: 500px;
-   text-align: center;
+#inner-shield-1{
+  height: 900px;
+  width: 1400px;
+    background-image: url("../woods.jpg");
 
-
-      .start-order{   
-         width: 100%;
-         position: absolute;
-       top: 100px;
-
-        .menu-items ul {
-            cursor: pointer;
-           margin-top: 400px;
-            @include span-columns(12 of 12);
-         }
-
-         li {
-            @include span-columns (3 of 12);
-            display: inline-block;
-         }
-      }
-      
-      .base {   
-        cursor: pointer;
-         width: 100%;
-         position: absolute;
-         top: 100px;
-         .menu-items ul {
-           margin-top: 400px;
-            @include span-columns(12 of 12);
-         }
-
-         li {
-            @include span-columns (4 of 12);
-            display: inline-block;
-         }
-      }
-    
-      .protein {   
-         cursor: pointer;         
-         width: 100%;
-         position: absolute;
-         top: 100px;
-         .menu-items ul {
-           margin-top: 400px;
-            @include span-columns(12 of 12);
-         }
-
-         li {
-            @include span-columns (2.4 of 12);
-            display: inline-block;
-         }
-      }
-
-      .toppings {   
-        cursor: pointer;
-         width: 100%;
-         position: absolute;
-         top: 100px;
-         .menu-items ul {
-           margin-top: 400px;
-            @include span-columns(12 of 12);
-         }
-
-         li {
-            @include span-columns (2 of 12);
-            display: inline-block;
-         }
-      }
-
-    
-    
 }
+
+#inner-shield-2{
+  background-color: white;
+
+  height: 100%;
+  width: 2800px;
+}
+
+#inner-shield-3{
+  background-color: blue;
+  height: 100%;
+  width: 4200px;
+}
+
+#inner-shield-4{
+  background-color: darkgrey;
+  height: 100%;
+  width: 5600px;
+}
+
+
+#inner-shield-5{
+  background-color: pink;
+  height: 100%;
+  width: 7000px;
+}
+
+#inner-shield-6{
+  background-color: green;
+  height: 100%;
+  width: 8400px;
+}
+
+
+
+
+
+

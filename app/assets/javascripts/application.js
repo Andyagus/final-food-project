@@ -16,28 +16,56 @@
 //= require_tree .
 
 $( document ).ready(function() {
-     
+      $('.white-bread').hide()
+      $('.trans-bread').hide();
+      $('.chicken').hide();
+      $('.onion').hide();
+      $('.bread-bite').hide()
 
-      $('.base').hide();
-   $('.start-order .menu-items').click(function(){
-      $('.start-order').addClass('animated bounceOutLeft');
-      $('.base').show(0)
-      $('.base').addClass('animated bounceInRight');
 
-   });
-   $('.protein').hide();
-   
-   $('.base .menu-items').click(function(){
-      $('.base').addClass('animated bounceOutLeft');
-      $('.protein').show(0);
-      $('.protein').addClass('animated bounceInRight');
-   });
 
-   $('.toppings').hide();
+      function startbread(){
+         $('.white-bread').show()
+         $('.white-bread').addClass('fadeInDown');
+      }
 
-   $('.protein .menu-items').click(function(){
-      $('.protein').addClass('animated bounceOutLeft');
-      $('.toppings').show(0);
-      $('.toppings').addClass('animated bounceInRight');
-   });
+      function startchicken(){
+         $('.chicken').show()         
+         $('.chicken').addClass('animated slideInUp');
+      }
+      
+      function startonion(){
+         $('.onion').show()               
+         $('.onion').addClass('animated slideInRight');
+      }
+
+      function closebread(){
+       $('.trans-bread').show();
+       $('.trans-bread').addClass('animated slideInLeft');
+      }
+
+      function takebite(){
+         $('.trans-bread').hide();
+         $('.white-bread').hide();
+         $('.bread-bite').show();
+         $('.bread-bite').addClass('animated pulse');
+      }
+
+
+      setTimeout(startbread, 0);
+      setTimeout(startchicken, 500);  
+      setTimeout(startonion, 1000);            
+      setTimeout(closebread, 2000);
+      setTimeout(takebite, 2500);
+
+         $(function () {
+             $('.tlt').textillate({
+                 initialDelay: 1200
+             });
+         })
 });
+
+
+
+
+

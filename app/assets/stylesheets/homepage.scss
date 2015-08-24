@@ -1,0 +1,77 @@
+.image-content {
+   @include outer-container (100%);
+   
+  .white-bread {
+      width: 700px;
+      position: absolute;
+      z-index: 1;
+      left: 400px;
+      top: 20px;
+   }
+
+
+.bread-bite {
+      width: 700px;
+      position: absolute;
+      z-index: 100;
+      left: 400px;
+      top: 20px;
+   }
+
+     .trans-bread {
+      width: 700px;
+      position: absolute;
+      z-index: 100;
+      left: 400px;
+      top: 20px;
+   }
+
+   .chicken {
+      width: 600px;
+      position: absolute;
+      z-index: 2;
+      left: 470px;
+      top: 100px;
+   }
+ 
+ .onion {
+      width: 600px;
+      position: absolute;
+      z-index: 2;
+      left: 470px;
+      top: 100px;
+   }
+
+}
+
+svg {
+   position: absolute;
+   top:-10px;
+   left: 400px;
+   z-index: 40;
+   width: 60%;
+
+}
+.st1 {
+  width: 60%;
+  opacity: 1;
+  animation-delay:-3s;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+h2 {
+      position: absolute;
+      z-index: 10000;
+      font-size: 64px;
+      left: 600px;
+      top: 350px;
+}
+
