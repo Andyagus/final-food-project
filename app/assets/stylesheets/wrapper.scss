@@ -1,20 +1,18 @@
 
 
 body {
-   margin: 0;
-  background-image: url("../woods.jpg");
-
+  width: 8400px;
+  @include outer-container(100%);
 }
 
 #inner-shield-1{
-  height: 900px;
+  background-color: azure;
+  height: 100%;
   width: 1400px;
-    background-image: url("../woods.jpg");
-
 }
 
 #inner-shield-2{
-  background-color: white;
+  background-color: aquamarine;
 
   height: 100%;
   width: 2800px;

@@ -44,23 +44,14 @@ $( document ).ready(function() {
        $('.trans-bread').addClass('animated slideInLeft');
       }
 
-      function takebite(){
-         $('.trans-bread').hide();
-         $('.white-bread').hide();
-         $('.bread-bite').show();
-         $('.bread-bite').addClass('animated pulse');
-      }
-
-
       setTimeout(startbread, 0);
-      setTimeout(startchicken, 500);  
-      setTimeout(startonion, 1000);            
-      setTimeout(closebread, 2000);
-      setTimeout(takebite, 2500);
+      setTimeout(startchicken, 2000);  
+      setTimeout(startonion, 3000);            
+      setTimeout(closebread, 4000);
 
          $(function () {
              $('.tlt').textillate({
-                 initialDelay: 1200
+                 initialDelay: 4000
              });
          })
 });

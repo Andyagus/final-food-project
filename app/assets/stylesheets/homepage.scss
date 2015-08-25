@@ -1,5 +1,4 @@
 .image-content {
-   @include outer-container (100%);
    
   .white-bread {
       width: 700px;
@@ -55,10 +54,10 @@ svg {
 .st1 {
   width: 60%;
   opacity: 1;
-  animation-delay:-3s;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 2s linear forwards;
+  animation: dash 5s linear forwards ;
+
 }
 
 @keyframes dash {
@@ -72,6 +71,6 @@ h2 {
       z-index: 10000;
       font-size: 64px;
       left: 600px;
-      top: 350px;
+      top: 700px;
 }
 
