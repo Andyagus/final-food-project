@@ -1,21 +1,128 @@
+<div id="inner-shield-1">
+  <h1> Hello World </h1>
+  <div class="image-content">  
+      <img class="white-bread", src="white-bread.png">
+      <img class="chicken", src="chicken.png">
+      <img class="onion", src="onions.png">
+  <!--Ketchup-svg goes here -->
+      <img class="trans-bread", src="transparent_bread.png">
+      <img class="bread-bite", src="transparent_bread-bite.png">
+      <h2 class="tlt"> Feed.Me  </h2>
+  </div>
+</div>
+
+<div id="inner-shield-2">
+  <div class="header">
+    <h1> Choose Your Favorite Food! </h1>
+  </div>
+  <div class="image-content">
+          <div id="logo">Hello </div>
+
+  </div>
+  <div class="options">
+    <ul>
+      <li class="sandwich choice" data-choice="sandwich"> Sandwich </li>
+      <li class="hamburger choice" data-choice="hamburger"> Hamburger </li>
+      <li class="salad choice" data-choice="salad"> Salad </li>   
+      <li class="pizza choice" data-choice="pizza"> Pizza </li>
+    </ul>                                     
+  </div>
+</div>
+
+
+<div id="inner-shield-3">
+  <div class="header">
+    <h1> Choose Your Base! </h1>
+  </div>
+  <div class="image-content">
+  </div>
+  <div class="options">
+    <ul class="hamburger-base">
+    </ul> 
+    
+    <ul class="sandwich-base">
+    </ul>    
+    
+    <ul class="salad-base">
+      <% Products::Salad::OPTIONS.values[0].each do |n| %>
+        <li>
+          <%= n %>
+        </li>
+      <% end %> 
+    </ul>   
+    
+    <ul class="pizza-base">
+      <% Products::Pizza::OPTIONS.values[0].each do |n| %>
+        <li>
+          <%= n %>
+        </li>
+      <% end %> 
+    </ul>                                  
+
+  </div>
+</div>
+
+
+<div id="inner-shield-4">  
+  <div class="header">
+    <h1> Choose Your Protein! </h1>
+  </div>
+  <div class="image-content">
+  </div>
+  <div class="options">
+    <ul>
+      <li> Sandwich </li>
+      <li> Pizza </li>
+      <li> Hamburger </li>
+      <li> Salad </li>
+    </ul>                                     
+  </div>
+</div>
+
+ <div id="inner-shield-5">
+  <div class="header">
+    <h1> Choose Your Toppings! </h1>
+  </div>
+  <div class="image-content">
+  </div>
+  <div class="options">
+    <ul>
+      <li> Sandwich </li>
+      <li> Pizza </li>
+      <li> Hamburger </li>
+      <li> Salad </li>
+    </ul>                                     
+  </div>
+ </div>
+               
 <div id="inner-shield-6">
-      <div id="inner-shield-5">
-         <div id="inner-shield-4">
-           <div id="inner-shield-3">  
-             <div id="inner-shield-2">
-               <div id="inner-shield-1">
-                  <div class="image-content">  
-                      <img class="white-bread", src="white-bread.png">
-                      <img class="chicken", src="chicken.png">
-                      <img class="onion", src="onions.png">
-                      <%= ketchup_svg %>
-                      <img class="trans-bread", src="transparent_bread.png">
-                      <img class="bread-bite", src="transparent_bread-bite.png">
-                      <h2 class="tlt"> Feed.Me  </h2>
-                  </div>
-               </div>   
-             </div>  
-           </div> 
-         </div>
-      </div>
-   </div>
+  <div class="header">
+    <h1> Choose Your Condiments! </h1>
+  </div>
+  <div class="image-content">
+  </div>
+  <div class="options">
+    <ul>
+      <li> Sandwich </li>
+      <li> Pizza </li>
+      <li> Hamburger </li>
+      <li> Salad </li>
+    </ul>                                     
+  </div>
+</div>   
+
+<div id="inner-shield-7">
+  <div class="header">
+    <h1> Reivew Your Order </h1>
+  </div>
+  <div class="image-content">
+  </div>
+  <div class="options">
+    <ul>
+      <li> Sandwich </li>
+      <li> Pizza </li>
+      <li> Hamburger </li>
+      <li> Salad </li>
+    </ul>                                     
+  </div>
+</div>  

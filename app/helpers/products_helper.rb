@@ -120,4 +120,13 @@ module ProductsHelper
 '.html_safe
    end 
 
+   def checkbox
+      '<section title=".roundedTwo">
+       <div class="roundedTwo">
+         <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
+         <label for="roundedTwo"></label>
+       </div>
+     </section>'.html_safe
+   end
+
 end

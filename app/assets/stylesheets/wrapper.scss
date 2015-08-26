@@ -1,49 +1,76 @@
+#logo {
+  width: 400px;
+  height: 400px;
+  background-color:lighten(purple, 20%);
+  position: absolute;
+  left: 10px;
+  top: 300px;
+  z-index: 5000;
+  }
 
-
-body {
-  width: 8400px;
-  @include outer-container(100%);
+#wrapper {
+  width: 1400px;
+  height: 768px;
+  overflow: scroll;
 }
 
+
 #inner-shield-1{
-  background-color: azure;
-  height: 100%;
+  background-color: lighten(grey, 5%);
+  height: 768px;
   width: 1400px;
+  position: absolute;
+  left: 0px;
 }
 
 #inner-shield-2{
-  background-color: aquamarine;
-
-  height: 100%;
-  width: 2800px;
+  background-color: lighten(grey, 10%);
+  height: 768px;
+  width: 1400px;
+  position: absolute;
+  left:1400px;
 }
-
+  
 #inner-shield-3{
-  background-color: blue;
-  height: 100%;
-  width: 4200px;
+  background-color: lighten(grey, 15%);
+  height: 768px;
+  width: 1400px;
+  position: absolute;
+  left: 2800px;
 }
 
 #inner-shield-4{
-  background-color: darkgrey;
-  height: 100%;
-  width: 5600px;
+  background-color: lighten(grey, 20%);
+  height: 768px;
+  width: 1400px;
+  position: absolute;
+  left: 4200px;
 }
 
 
 #inner-shield-5{
-  background-color: pink;
-  height: 100%;
-  width: 7000px;
+  background-color: lighten(grey, 25%);
+  height: 768px;
+  width: 1400px;
+  position: absolute;
+  left: 5600px;
 }
 
 #inner-shield-6{
-  background-color: green;
-  height: 100%;
-  width: 8400px;
+  background-color: lighten(grey, 30%);
+  height: 768px;
+  width: 1400px;
+  position: absolute;
+  left: 7000px;
 }
 
-
+#inner-shield-7{
+  background-color: lighten(grey, 35%);
+  height: 768px;
+  width: 1400px;
+  position: absolute;
+  left: 8400px;
+}
 
 
 

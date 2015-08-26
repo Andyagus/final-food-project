@@ -1,0 +1,59 @@
+
+   .header h1 {
+      font-family: 'Oswald';
+      font-size: 64px;
+   }
+
+   .image-content {
+      height: 500px;
+      width: 500px;
+      @include span-columns(12);
+   }
+
+
+   .options {
+      ul {
+      margin-left: 150px;
+
+      }
+
+      li {
+      font-family: 'Open Sans', 'sans-serif';
+      font-size: 24px;
+      }
+
+   }
+
+   #inner-shield-2 .options li{
+      @include span-columns(3);
+   }
+
+#inner-shield-3{  
+   ul.sandwich-base li {
+     @include span-columns(4);
+   }
+   ul.hamburger-base li{
+      @include span-columns(4);
+   }
+   ul.salad-base li {
+      @include span-columns(4);
+   }
+   ul.pizza-base li {
+      @include span-columns (4);
+   }
+}
+
+#inner-shield-4{  
+   ul.sandwich-protein li {
+     @include span-columns(2.4);
+   }
+   ul.hamburger-protein li{
+      @include span-columns(4);
+   }
+   ul.salad-protein li {
+      @include span-columns(3);
+   }
+   ul.pizza-protein li {
+      @include span-columns (4);
+   }
+}
