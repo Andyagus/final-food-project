@@ -72,11 +72,7 @@ $( document ).ready(function() {
             $('#inner-shield-3').animate( { left: '1400' }, 1000);
       });
 
-    
-
-
-
-
+  
     //store  user options
       window.choices = []
       $(document).on('click', '.choice', function(){
@@ -102,11 +98,10 @@ $( document ).ready(function() {
         //$("<img class='animation ' " + sanitizeChoice(choice) + " src='" + imgUrl + "'>").appendTo('#content-wrapper');
         $("<img class='animation " + 'a' + sanitizeChoice(choice) + " ' src=' " + imgUrl + " '>").appendTo('#content-wrapper');
         TweenMax.to(".asandwich", 3.5, {x:600, rotation:360, scale:.9});
-        TweenMax.to(".awhite-bread", 2, {top:230});
+        TweenMax.to(".awhite-bread, .awheat-bread,.arye-bread", 2, {top:230});
         TweenMax.to(".agrilled-chicken, .asmoked-salmon, .aeggs, .asalami", 2, {top:300, left:500, rotation:68, opacity:.8});
-        TweenMax.to(".atomato, .aavocado, .aswiss-cheese ", 3, {y:300, rotation:360, opacity:.8});
-        TweenMax.to(".alettuce, .aamerican-cheese, .aonions", 3, {top:300, opacity:1});
-        TweenMax.to(".aketchup", 3, {y:300, rotation:360, opacity:1});
+        TweenMax.to(".atomato, .aavocado, .aswiss-cheese, .alettuce, .aamerican-cheese, .aonions" , 3, {y:340, rotation:360, opacity:.8});
+        TweenMax.to(".atomato, .aavocado, .aswiss-cheese, .alettuce, .aamerican-cheese, .aonions" , 3, {y:305, rotation:90, opacity:.8});
 
       })
 
@@ -123,10 +118,10 @@ $( document ).ready(function() {
         $( ".sandwich" ).click(function() {
           setTimeout(function(){ 
             $('.sandwich-base').show();
-            $('#inner-shield-2').animate( { left: '-1440' }, 3000);
-            $('#inner-shield-3').animate( { left: '0' }, 3000);
-            $('#inner-shield-4').animate( { left: '1440' }, 3000);
-          }, 4000); 
+            $('#inner-shield-2').animate( { left: '-1440' }, 2000);
+            $('#inner-shield-3').animate( { left: '0' }, 2000);
+            $('#inner-shield-4').animate( { left: '1440' }, 2000);
+          }, 3000); 
 
 
             for (var option of sandwichBaseOptions){
@@ -386,11 +381,10 @@ $( document ).ready(function() {
             document.getElementById("review-protein").innerHTML = choices[2];
             document.getElementById("review-topping").innerHTML = choices[3];
         });    
-
         $( ".pizza-condiment" ).click(function() {
             $('#inner-shield-6').animate( { left: '-1400' }, 1000);
             $('#inner-shield-7').animate( { left: '0' }, 1000);
-
+            TweenMax.to(".white-bread", 1, {top: 230, opacity:.9, scale:1.5});
             document.getElementById("review-food").innerHTML = choices[0];
             document.getElementById("review-base").innerHTML = choices[1];
             document.getElementById("review-protein").innerHTML = choices[2];

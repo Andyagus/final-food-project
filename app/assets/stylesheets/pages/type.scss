@@ -35,8 +35,22 @@
 
 
    .review-options {
+      background-image: white;
+      border: 1px #455A64 solid;
+      padding-top: -20px;
+      padding: 0px 20px 20px 20px;
+      width: 300px;
+      position: absolute;
+      top: 200px;
+      left: 900px;
+
       table{
          position: relative;
          border-bottom: 0px;
+         border-collapse:collapse
+      }
+
+         button {
+      margin-left: 70px;
       }
    }
