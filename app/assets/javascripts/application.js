@@ -101,9 +101,12 @@ $( document ).ready(function() {
 
         //$("<img class='animation ' " + sanitizeChoice(choice) + " src='" + imgUrl + "'>").appendTo('#content-wrapper');
         $("<img class='animation " + 'a' + sanitizeChoice(choice) + " ' src=' " + imgUrl + " '>").appendTo('#content-wrapper');
-        TweenMax.to(".asandwich", 3, {y:30, x:335, scale:0.9, ease:Bounce.easeOut});
-        TweenMax.to(".awhite-bread", 3, {y:150, opacity:1});
-        TweenMax.to(".agrilled-chicken", 3, {y:250, rotation:68, opacity:1});
+        TweenMax.to(".asandwich", 3.5, {x:600, rotation:360, scale:.9});
+        TweenMax.to(".awhite-bread", 2, {top:230});
+        TweenMax.to(".agrilled-chicken, .asmoked-salmon, .aeggs, .asalami", 2, {top:300, left:500, rotation:68, opacity:.8});
+        TweenMax.to(".atomato, .aavocado, .aswiss-cheese ", 3, {y:300, rotation:360, opacity:.8});
+        TweenMax.to(".alettuce, .aamerican-cheese, .aonions", 3, {top:300, opacity:1});
+        TweenMax.to(".aketchup", 3, {y:300, rotation:360, opacity:1});
 
       })
 
@@ -112,7 +115,7 @@ $( document ).ready(function() {
 
     // base options 
 
-        sandwichBaseOptions = ["White Bread", "Whole Wheat Bread", "Rye Bread"];
+        sandwichBaseOptions = ["White Bread", "Wheat Bread", "Rye Bread"];
         hamburgerBaseOptions = ["Whole Wheat Bun", "Brioche Bun", "Sesame Bun"];
         pizzaBaseOptions = ["Small Pie", "Medium Pie", "Large Pie"];
         saladBaseOptions = ["Romaine Lettuce", "Baby Spinach", "Arugula"];
@@ -120,14 +123,14 @@ $( document ).ready(function() {
         $( ".sandwich" ).click(function() {
           setTimeout(function(){ 
             $('.sandwich-base').show();
-            $('#inner-shield-2').animate( { left: '-1400' }, 1000);
-            $('#inner-shield-3').animate( { left: '0' }, 1000);
-            $('#inner-shield-4').animate( { left: '1400' }, 1000);
+            $('#inner-shield-2').animate( { left: '-1440' }, 3000);
+            $('#inner-shield-3').animate( { left: '0' }, 3000);
+            $('#inner-shield-4').animate( { left: '1440' }, 3000);
           }, 4000); 
 
 
             for (var option of sandwichBaseOptions){
-              $('ul.sandwich-base').append("<li class='choice' data-choice='" + option + "'>" + option + "</li>");
+              $('ul.sandwich-base').append("<li><button class='choice button' data-choice='" + option + "'>" + option + "</button>"+ "</li>");
             }
             $(this).off('click');
         });
@@ -180,14 +183,14 @@ $( document ).ready(function() {
         $( ".sandwich-base" ).click(function() {
           setTimeout(function(){ 
             $('.sandwich-protein').show();
-            $('#inner-shield-3').animate( { left: '-1400' }, 1000);
+            $('#inner-shield-3').animate( { left: '-1440' }, 1000);
             $('#inner-shield-4').animate( { left: '0' }, 1000);
-            $('#inner-shield-5').animate( { left: '1400' }, 1000);
+            $('#inner-shield-5').animate( { left: '1440' }, 1000);
           }, 3000);
 
 
             for (var option of sandwichProteinOptions){
-              $('ul.sandwich-protein').append("<li class='choice' data-choice='" + option + "'>" + option + "</li>");
+              $('ul.sandwich-protein').append("<li><button class='choice button' data-choice='" + option + "'>" + option + "</button>"+ "</li>");
             }
             $(this).off('click');
         });
@@ -233,7 +236,7 @@ $( document ).ready(function() {
 
        // toppings options    
       
-      sandwichToppingOptions = ["Lettuce", "Tomato", "Avocado","American Cheese", "Swiss Cheese", "Onions"];
+      sandwichToppingOptions = ["Lettuce", "Tomato", "Avocado", "Onions", "American Cheese", "Swiss Cheese"];
       hamburgerToppingOptions = ["Lettuce", "Tomato", "Pickles", "American Cheese"];
       saladToppingOptions = ["Olives", "Brocolli", "Carrotts", "American Cheese", "Mozzarella Cheese"];
       pizzaToppingOptions = ["Mushrooms", "Olives", "Peppers"];
@@ -248,11 +251,14 @@ $( document ).ready(function() {
           }, 4000); 
 
             for (var option of sandwichToppingOptions){
-              $('ul.sandwich-topping').append("<li class='choice' data-choice='" + option + "'>" + option + "</li>");
+              $('ul.sandwich-topping').append("<li><button class='choice button' data-choice='" + option + "'>" + option + "</button>"+ "</li>");
             }
             $(this).off('click');
         });
-        
+
+
+
+
         $( ".hamburger-protein" ).click(function() {
             $('.hamburger-topping').show();
             $('#inner-shield-4').animate( { left: '-1400' }, 1000);
@@ -298,15 +304,15 @@ $( document ).ready(function() {
       pizzaCondimentOptions = ["Ketchup", "Hot Sauce", "Red Pepper", "Garlic"];
 
         $( ".sandwich-topping" ).click(function() {
-            
+        
+          setTimeout(function(){  
             $('.sandwich-condiment').show();
             $('#inner-shield-5').animate( { left: '-1400' }, 1000);
             $('#inner-shield-6').animate( { left: '0' }, 1000);
             $('#inner-shield-7').animate( { left: '1400' }, 1000);
-            console.log("animated5")
-
+          }, 4000);  
             for (var option of sandwichCondimentOptions){
-              $('ul.sandwich-condiment').append("<li class='choice' data-choice='" + option + "'>" + option + "</li>");
+              $('ul.sandwich-condiment').append("<li><button class='choice button' data-choice='" + option + "'>" + option + "</button>"+ "</li>");
             }
             $(this).off('click');
         });      

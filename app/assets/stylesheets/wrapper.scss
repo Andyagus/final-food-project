@@ -2,43 +2,81 @@
 #content-wrapper {
   width: 10000px;
   height: 768px;
-  background-color: white;
   position: absolute;
 }
 
-.logo {
-  width: 200px;
-  height: 200px;
-  background-color:lighten(purple, 20%);
-  position: absolute;
-  left: 10px;
-  top: 300px;
-  z-index: 5000;
+  .header {
+    background-color: $primary-color;
+    height: 30%;
+    margin-top: -55px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
 #wrapper {
-  width: 1400px;
+  width: 1440px;
   height: 768px;
   overflow: scroll;
-  background-color: transparent;
+  background-color: #edd4ab;
+      // -webkit-animation: play 1s steps(10) infinite;
+      //  -moz-animation: play 2s steps(10) infinite;
+      //   -ms-animation: play 2s steps(10) infinite;
+      //    -o-animation: play 2s steps(10) infinite;
+      //       animation: play 2s steps(10) infinite;
 }
+
+// @-webkit-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: 1400px; }
+// }
+
+// @-moz-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: 1400px; }
+// }
+
+// @-ms-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: 1400px; }
+// }
+
+// @-o-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: 1400px; }
+// }
+
+// @keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: 1400px; }
+// }
+
+
+
+
+
+
+
+
 
 #inner-shield-1{
   height: 768px;
   width: 1400px;
   position: absolute;
   left: 0px;
+  background-color: $primary-color;
+
 }
 
+
 #inner-shield-2{
-  height: 768px;
+  height: 600px;
   width: 1400px;
   position: absolute;
   left:1400px;
+
 }
   
 #inner-shield-3{
-  height: 768px;
+  height: 600px;
   width: 1400px;
   position: absolute;
   left: 2800px;
@@ -49,6 +87,15 @@
   width: 1400px;
   position: absolute;
   left: 4200px;
+      
+    .header {
+      height: 23.5%;
+    }
+
+    .options {
+      margin-left: 15%;
+    }
+
 }
 
 #inner-shield-5{
@@ -56,6 +103,17 @@
   width: 1400px;
   position: absolute;
   left: 5600px;
+
+
+  .header {
+      height: 23.5%;
+    }
+
+    .options {
+      margin-left: 2%;
+    }
+
+
 }
 
 #inner-shield-6{
@@ -63,6 +121,14 @@
   width: 1400px;
   position: absolute;
   left: 7000px;
+
+    .header {
+      height: 23.5%;
+    }
+
+    .options {
+      margin-left: 2%;
+    }
 }
 
 #inner-shield-7{

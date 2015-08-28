@@ -2,25 +2,28 @@
 button {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
-  background-color: $action-color;
+  background-color: $accent-color;
   border-radius: $base-border-radius;
   border: none;
-  color: #fff;
+  color: white;
+  font-family: 'Roboto', 'Open Sans';
+  font-weight: 500;
+  text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: 600;
+  font-size: 14px;
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  width: 150px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
+    background-color: lighten($primary-color, 10%);
     color: #fff;
   }
 

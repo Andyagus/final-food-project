@@ -16,22 +16,23 @@ $( document ).ready(function() {
       {scale:.3, delay:7});
    $('white-bread').hide();
 
-      $('.title').textillate({
 
-         initialDelay: 4800,
+    $('.title').textillate({
 
-
-         // in animation settings
-         in: {
-          // set the effect name
-          effect: 'bounceInUp',
+             initialDelay: 5000,
 
 
-          // set to true to animate all the characters at the same time
-          sync: true,
+             // in animation settings
+             in: {
+              // set the effect name
+              effect: 'bounceInUp',
 
-         }
-      });
+
+              // set to true to animate all the characters at the same time
+              sync: true,
+
+             }
+    });   
 
 });
 

@@ -1,37 +1,35 @@
-
-   .header h1 {
-      font-family: 'Oswald';
-      font-size: 64px;
-      margin-top: -18px;
-   }
-
-   .image-content {
-      height: 570px;
-      width: 500px;
-      @include span-columns(12);
-   }
-
+#inner-shield-2 {
 
    .options {
-      ul {
-      margin-left: 150px;
 
-      }
+         li{
+            @include span-columns(3);
+         }
 
-      li {
-      font-family: 'Open Sans', 'sans-serif';
-      font-size: 24px;
-      cursor: wait;
-
-      }
-
+         ul {
+            margin-left: 10%;
+         }
    }
-
-   #inner-shield-2 .options li{
-      @include span-columns(3);
-   }
+}
 
 #inner-shield-3{  
+
+   .options {
+               margin-left: 12%;
+
+      .sandwich-base {
+         ul {
+
+            li {
+               @include span-columns(4);
+            }
+         }
+      }
+
+   
+   }
+
+   
    ul.sandwich-base li {
      @include span-columns(4);
    }
@@ -123,16 +121,16 @@
 }
 
 .review-options {
-      ul {
-      @include span-columns(12);
-      }
+      // ul {
+      // @include span-columns(12);
+      // }
       
-      h1{
-         font-size: 24px;
-      }
+      // h1{
+      //    font-size: 24px;
+      // }
 
-      li {
-      font-family: 'Open Sans', 'sans-serif';
-      font-size: 24px;
-      }
+      // li {
+      // font-family: 'Open Sans', 'sans-serif';
+      // font-size: 24px;
+      // }
 }

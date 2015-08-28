@@ -1,0 +1,95 @@
+Searching 2757 files for "fonts.googleapis"
+
+/Users/AndyAgus/Desktop/final-project-food/project-food/app/assets/stylesheets/base/_typography.scss:
+    1: @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
+    2  
+    3  
+
+/Users/AndyAgus/Desktop/final-project-food/project-food/app/assets/stylesheets/base/_variables.scss:
+    1  
+    2  // Typography
+    3: @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+    4: @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+    5  $base-font-family:'Roboto';
+    6  $heading-font-family: $base-font-family;
+
+3 matches across 2 files
+
+
+Searching 3105 files for ".options"
+
+/Users/AndyAgus/Desktop/final-project-food/project-food/app/assets/javascripts/jquery.textillate.js:
+  126  
+  127        setTimeout(function () {
+  128:         base.options.autoStart && base.start();
+  129:       }, base.options.initialDelay)
+  130      };
+  131  
+  132      base.setOptions = function (options) {
+  133:       base.options = options;
+  134      };
+  135  
+  ...
+  144  
+  145        var $elem = base.$texts.find(':nth-child(' + ((index||0) + 1) + ')')
+  146:         , options = $.extend(true, {}, base.options, $elem.length ? getData($elem[0]) : {})
+  147          , $tokens;
+  148  
+  ...
+  156  
+  157        // split words to individual characters if token type is set to 'char'
+  158:       if (base.options.type == "char") {
+  159          base.$current.find('[class^="word"]')
+  160              .css({
+  ...
+  170  
+  171        $tokens = base.$current
+  172:         .find('[class^="' + base.options.type + '"]')
+  173          .css('display', 'inline-block');
+  174  
+  ...
+  190      base.out = function (cb) {
+  191        var $elem = base.$texts.find(':nth-child(' + ((base.currentIndex||0) + 1) + ')')
+  192:         , $tokens = base.$current.find('[class^="' + base.options.type + '"]')
+  193:         , options = $.extend(true, {}, base.options, $elem.length ? getData($elem[0]) : {})
+  194  
+  195        base.triggerEvent('outAnimationBegin');
+  ...
+  213            index += 1;
+  214  
+  215:           if (!base.options.loop && index >= length) {
+  216:             if (base.options.callback) base.options.callback();
+  217              base.triggerEvent('end');
+  218            } else {
+  ...
+  223                  run(index)
+  224                });
+  225:             }, base.options.minDisplayTime);
+  226            }
+  227          });
+  228        }(index || 0));
+  229:       }, base.options.initialDelay);
+  230      };
+  231  
+
+/Users/AndyAgus/Desktop/final-project-food/project-food/app/assets/stylesheets/pages/shields.scss:
+    2     #inner-shield-2 {
+    3  
+    4:    .options {
+    5  
+    6           li{
+    .
+   17  #inner-shield-3{  
+   18  
+   19:    .options {
+   20        
+   21        .sandwich-base {
+
+/Users/AndyAgus/Desktop/final-project-food/project-food/app/assets/stylesheets/pages/type.scss:
+   18  
+   19  
+   20:    .options {
+   21        height: 150px;
+   22       
+
+16 matches across 3 files
