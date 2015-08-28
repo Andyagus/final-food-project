@@ -7,12 +7,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
    <%= javascript_include_tag 'lettering', 'data-turbolinks-track' => true %>
    <%= javascript_include_tag 'snap.svg', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <div id="wrapper">
+  <div id="content-wrapper">
        <%= yield %>
+  </div>         
 </div>   
 
 

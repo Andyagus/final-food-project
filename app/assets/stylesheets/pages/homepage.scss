@@ -1,11 +1,13 @@
 .image-content {
-   
+  height: 500px;
+  
   .white-bread {
-      width: 700px;
+      width: 500px;
       position: absolute;
-      z-index: 1;
-      left: 400px;
+      left: 0px;
       top: 20px;
+      z-index: 1;
+
    }
 
 
@@ -18,27 +20,88 @@
    }
 
      .trans-bread {
-      width: 700px;
+      width: 500px;
       position: absolute;
-      z-index: 100;
-      left: 400px;
+      left: 0px;
       top: 20px;
+      opacity: 0;
+      z-index: 100;
    }
 
-   .chicken {
+   .chicken1 {
       width: 600px;
       position: absolute;
       z-index: 2;
-      left: 470px;
-      top: 100px;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
    }
  
- .onion {
+
+   .chicken2 {
       width: 600px;
       position: absolute;
       z-index: 2;
-      left: 470px;
-      top: 100px;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+   }
+ 
+
+ .light-onion {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      left: 540px;
+      top: 300px;
+   }
+
+   .dark-onion {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      left: 600px;
+      top: 300px;
+   }
+ 
+    .dark-onion2 {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      left: 600px;
+      top: 350px;
+   }
+
+  .light-onion2 {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      left: 540px;
+      top: 270px;
+   }
+
+    .dark-onion3 {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      left: 699px;
+      top: 265px;
+   }
+
+  .light-onion3 {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      left: 600px;
+      top: 200px;
+   }
+
+   h1 {
+      position: absolute;
+      top: 415px;
+      left: 622px;
+      font-size: 36px;
+
    }
 
 }
@@ -71,7 +134,7 @@ h2 {
       z-index: 1000;
       font-size: 64px;
       left: 600px;
-      top: 700px;
+      top: 350px;
       color: #FFEB3B;
 }
 

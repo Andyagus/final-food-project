@@ -2,10 +2,11 @@
    .header h1 {
       font-family: 'Oswald';
       font-size: 64px;
+      margin-top: -18px;
    }
 
    .image-content {
-      height: 500px;
+      height: 570px;
       width: 500px;
       @include span-columns(12);
    }
@@ -20,6 +21,8 @@
       li {
       font-family: 'Open Sans', 'sans-serif';
       font-size: 24px;
+      cursor: wait;
+
       }
 
    }
@@ -45,7 +48,7 @@
 
 #inner-shield-4{  
    ul.sandwich-protein li {
-     @include span-columns(2.4);
+     @include span-columns(3);
    }
    ul.hamburger-protein li{
       @include span-columns(4);
@@ -56,4 +59,80 @@
    ul.pizza-protein li {
       @include span-columns (4);
    }
+}
+
+#inner-shield-4{  
+   ul.sandwich-protein li {
+     @include span-columns(3);
+   }
+   ul.hamburger-protein li{
+      @include span-columns(4);
+   }
+   ul.salad-protein li {
+      @include span-columns(3);
+   }
+   ul.pizza-protein li {
+      @include span-columns (6);
+   }
+}
+
+
+#inner-shield-4{  
+   ul.sandwich-protein li {
+     @include span-columns(3);
+   }
+   ul.hamburger-protein li{
+      @include span-columns(4);
+   }
+   ul.salad-protein li {
+      @include span-columns(3);
+   }
+   ul.pizza-protein li {
+      @include span-columns (6);
+   }
+}
+
+#inner-shield-5{  
+   ul.sandwich-topping li {
+     @include span-columns(2);
+   }
+   ul.hamburger-topping li{
+      @include span-columns(3);
+   }
+   ul.salad-topping li {
+      @include span-columns(2.4);
+   }
+   ul.pizza-topping li {
+      @include span-columns (4);
+   }
+}
+
+#inner-shield-6{  
+   ul.sandwich-condiment li {
+     @include span-columns(4);
+   }
+   ul.hamburger-condiment li{
+      @include span-columns(4);
+   }
+   ul.salad-condiment li {
+      @include span-columns(4);
+   }
+   ul.pizza-condiment li {
+      @include span-columns (3);
+   }
+}
+
+.review-options {
+      ul {
+      @include span-columns(12);
+      }
+      
+      h1{
+         font-size: 24px;
+      }
+
+      li {
+      font-family: 'Open Sans', 'sans-serif';
+      font-size: 24px;
+      }
 }

@@ -6,5 +6,3 @@ class Products::Salad < Product
       condiments: ['Blue Cheese Dressing', 'Ranch Dressing', 'Belsamic Vinegerette']
    }
 end
-
- 
